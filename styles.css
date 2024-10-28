@@ -119,64 +119,141 @@ section#home {
     background: linear-gradient(90deg, #88ffee, #062ab4) !important; /* Degradê azul moderno */
     color: #ffffff; /* Texto em branco para contraste */
     text-align: center;
-    border-radius: 0 0 20px 20px; /* Bordas mais arredondadas */
-    padding: 80px 20px; /* Espaçamento interno aumentado para melhor visualização */
-    position: relative; /* Para facilitar posicionamento de elementos internos */
+    border-radius: 0 0 20px 20px; /* Bordas arredondadas */
+    padding: 80px 20px; /* Espaçamento interno */
+    position: relative; /* Facilita o posicionamento de elementos internos */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar a seção */
+    font-family: 'Poppins', sans-serif; /* Fonte mais moderna */
 }
 
 section#home h1 {
-    font-size: 3.5rem; /* Aumenta o tamanho do título */
+    font-size: 2rem; /* Aumenta o tamanho do título para maior impacto */
     margin-bottom: 20px;
     color: white;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Sombra para maior impacto */
-    letter-spacing: 2px; /* Espaçamento entre letras para um estilo moderno */
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); /* Sombra para maior destaque */
+    letter-spacing: 2px; /* Espaçamento entre letras */
 }
 
 section#home p {
-    font-size: 1.6rem; /* Aumenta o tamanho da fonte */
+    font-size: 1.2rem; /* Reduzido um pouco para mais elegância */
     color: white;
-    max-width: 800px; /* Limita a largura do parágrafo para melhor legibilidade */
-    margin: 0 auto; /* Centraliza o parágrafo */
+    max-width: 800px; /* Mantém a largura máxima para melhor leitura */
+    margin: 0 auto 30px auto; /* Centraliza e adiciona espaçamento inferior */
+    line-height: 1.6; /* Melhora a legibilidade */
 }
 
+/* Botões com design moderno */
 .btn {
-    background: linear-gradient(135deg, #ecf0f1, #1abc9c); /* Gradiente no botão */
-    color: #2c3e50; /* Texto do botão em uma cor escura */
-    padding: 12px 25px; /* Aumenta o padding para um botão mais atrativo */
-    border-radius: 50px; /* Bordas mais arredondadas para um visual moderno */
+    background: linear-gradient(135deg, #ecf0f1, #1abc9c); /* Gradiente suave no botão */
+    color: #2c3e50; /* Texto escuro */
+    padding: 12px 30px; /* Padding maior para um botão mais atraente */
+    border-radius: 50px; /* Bordas mais arredondadas */
     text-decoration: none;
-    font-size: 1.1rem; /* Aumenta o tamanho da fonte do botão */
-    font-weight: bold; /* Texto em negrito para destaque */
-    transition: all 0.3s ease; /* Transições mais suaves */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra suave padrão */
-    position: relative; /* Para o efeito de sombra */
-    overflow: hidden; /* Para esconder elementos que saem do botão */
+    font-size: 1.1rem; /* Tamanho da fonte ajustado */
+    font-weight: bold; /* Negrito */
+    transition: all 0.3s ease; /* Transição suave */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    display: inline-block; /* Garante que o botão seja um bloco */
+    margin: 10px; /* Espaçamento entre os botões */
 }
 
 .btn:hover {
-    background: linear-gradient(135deg, #1abc9c, #ecf0f1); /* Inverte o gradiente no hover */
-    transform: translateY(-5px) scale(1.05); /* Leve elevação e aumento no hover */
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Aumenta a sombra no hover */
+    background: linear-gradient(135deg, #1abc9c, #ecf0f1); /* Gradiente invertido no hover */
+    transform: translateY(-3px) scale(1.05); /* Efeito de hover */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* Sombra maior no hover */
 }
 
+/* Estilo para o botão do WhatsApp */
+.whatsapp-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.whatsapp-number {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #007bff, #00c6ff);
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s;
+    font-size: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    gap: 8px; /* Espaço entre o ícone e o número */
+}
+
+.whatsapp-number i {
+    font-size: 1.5rem; /* Tamanho ajustado do ícone */
+    display: flex;
+    align-items: center;
+}
+
+.whatsapp-number span {
+    font-size: 1.2rem; /* Tamanho ajustado do número */
+    font-weight: bold;
+    line-height: 1; /* Reduz a altura da linha para centralizar */
+}
+
+.whatsapp-number:hover {
+    background-color: #1abc9c;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+
+
+/* Seção Produtos */
 section#produtos {
-    background: #ffffff; /* Mantém o fundo branco */
+    background: #ffffff; /* Fundo branco */
     padding: 50px 0;
     font-family: 'Poppins', sans-serif;
 }
 
-.btn {
-    background: #ecf0f1;
-    color: #2c3e50;
-    padding: 10px 20px;
-    border-radius: 25px;
+#produtos .btn {
+    background: #ecf0f1; /* Cor neutra para o botão */
+    color: #2c3e50; /* Texto escuro */
+    padding: 12px 30px; /* Padding maior */
+    border-radius: 50px;
     text-decoration: none;
     transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra padrão */
 }
 
-.btn:hover {
-    background: #1abc9c;
-    transform: scale(1.05);
+#produtos .btn:hover {
+    background: #1abc9c; /* Cor verde no hover */
+    transform: scale(1.05); /* Leve aumento no hover */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    section#home {
+        padding: 60px 15px; /* Ajuste de padding em telas menores */
+    }
+    
+    section#home h1 {
+        font-size: 2rem; /* Reduz o tamanho do título */
+    }
+    
+    section#home p {
+        font-size: 1rem; /* Reduz o tamanho do texto */
+    }
+
+    .btn {
+        padding: 10px 20px; /* Ajuste no padding dos botões */
+        font-size: 1rem; /* Tamanho da fonte ajustado */
+    }
+
+    .fab.fa-whatsapp {
+        font-size: 40px; /* Reduz o tamanho do ícone do WhatsApp */
+    }
+
+    .whatsapp-contact span {
+        font-size: 1.2rem; /* Ajuste no tamanho do número */
+    }
 }
 
 section#produtos {
@@ -444,15 +521,7 @@ footer p {
     color: white;
 }
 
-footer .social-icons {
-    margin-top: 20px; /* Espaçamento acima dos ícones */
-    display: flex; /* Usar flexbox para centralizar os ícones */
-    justify-content: center; /* Centraliza os ícones */
-    gap: 15px; /* Espaçamento entre os ícones */
-}
-
 footer .social-icons a {
-    color: #ecf0f1; /* Cor padrão dos ícones */
     font-size: 28px; /* Tamanho dos ícones */
     padding: 10px; /* Espaçamento em torno dos ícones */
     border-radius: 50%; /* Formato circular para o hover */
@@ -460,10 +529,34 @@ footer .social-icons a {
     display: inline-block; /* Necessário para o efeito de hover */
 }
 
-footer .social-icons a:hover {
-    transform: scale(1.2); /* Aumenta o ícone ao passar o mouse */
-    color: black; /* Cor do ícone ao passar o mouse */
+footer .social-icons a.instagram {
+    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4); /* Degradê do Instagram */
+    -webkit-background-clip: text;
+    color: transparent;
 }
+
+/* Hover para cada rede social */
+footer .social-icons a.instagram:hover {
+    background: linear-gradient(45deg, #dd2a7b, #f58529, #515bd4, #8134af); /* Invertendo o degradê no hover */
+    color: transparent;
+    -webkit-background-clip: text;
+    border-radius: 10%; /* Forma circular */
+    padding: 10px; /* Espaçamento em torno do ícone */
+}
+
+footer .social-icons a.linkedin {
+    color: white; /* Branco padrão */
+    background-color: #0A66C2; /* Fundo azul específico do LinkedIn */
+    border-radius: 0%; /* Forma circular */
+    padding: 10px; /* Espaçamento em torno do ícone */
+}
+
+footer .social-icons a.linkedin:hover {
+    color: #0A66C2; /* Azul ao passar o mouse */
+    background-color: white; /* Fundo branco ao passar o mouse */
+    text-decoration: none;
+}
+
 
 /* Cores personalizadas para os links */
 .home-link,
